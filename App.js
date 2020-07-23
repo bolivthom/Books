@@ -21,19 +21,30 @@ const SwitchNavigator = createSwitchNavigator(
   }
 )
 
-const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator(
+  <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Main" component={Main} />
+      </Stack.Navigator>
+    </NavigationContainer>
+);
+
+
+
+const Tab = createBottomTabNavigator(
+  <NavigationContainer>
+      <MyTabs />
+    </NavigationContainer>
+);
 
 function MyTabs() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={Main} />
+      <Tab.Screen name="Main" component={Main} />
     </Tab.Navigator>
   );
 }
 
 
-const App = createAppContainer(SwitchNavigator,
-  <NavigationContainer>
-      <MyTabs />
-    </NavigationContainer>);
+const App = createAppContainer(SwitchNavigator, Stack, Tab)
 export default App
