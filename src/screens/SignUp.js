@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     },
     textInput: {
         height: 40,
-        width: '90%',
+        width: '70%',
         borderColor: 'transparent',
         borderBottomColor: '#e4e3e3',
         borderWidth: 1,
@@ -81,12 +81,12 @@ const styles = StyleSheet.create({
         backgroundColor: '#84a9ac',
         borderWidth: 1,
         borderColor: 'transparent',
-        width: 100,
-        height: 35,
+        width: 300,
+        height: 45,
         overflow: 'hidden',
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 10
+        marginTop: 20
     },
     buttonText: {
         color: '#fff',
