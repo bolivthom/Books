@@ -4,10 +4,13 @@ import { View, Text, TextInput, Button, StyleSheet, Dimensions, TouchableOpacity
 
 export default class Login extends React.Component {
 state = { email: '', password: '', errorMessage: null }
+
+//Firebase Login
 handleLogin = () => {
   firebaseAuth.signInWithEmailAndPassword(this.state.email, this.state.password).then(() => this.props.navigation.navigate('Main'))
 .catch(error => this.setState({ errorMessage: error.message }));
 }
+
 render() {
 return (
    <View style={styles.container}>
