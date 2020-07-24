@@ -48,7 +48,6 @@ const renderItem = ({ item }) => (
 
 return (
 <View style={styles.container}>
-
       <FlatList
         numColumns={3}
         data={DATA}
@@ -84,7 +83,7 @@ heading: {
   marginBottom: 10
  }, 
 item: {
-  backgroundColor: '#f9c2ff',
+  backgroundColor: '#D5D8DC',
   marginVertical: 8,
   marginHorizontal: 8,
   height: 149,
