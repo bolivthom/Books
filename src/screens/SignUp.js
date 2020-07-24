@@ -41,7 +41,7 @@ export default class SignUp extends React.Component {
            </View>
          </TouchableOpacity>
          <Button color="transparent"
-         title="Already have an account? Login " color="#3b6978"
+         title="Already have an account? Login " color="#828282"
          onPress={() => this.props.navigation.navigate('Login')}
           />
       </View>
@@ -62,31 +62,34 @@ const styles = StyleSheet.create({
         marginBottom: 35
     },
     heading: {
-        color: '#3b6978',
+        color: '#828282',
         fontSize: 26,
         marginBottom: 10
     },
     textInput: {
-        height: 40,
-        width: '70%',
         borderColor: 'transparent',
-        borderBottomColor: '#e4e3e3',
+        backgroundColor: '#F2F2F2',
+        width: 350,
+        height: 45,
+        borderRadius: 6,
         borderWidth: 1,
         marginTop: 8,
-        color: '#204051'
+        color: '#204051',
+        marginTop: 15,
+        paddingHorizontal: 20,
     },
     signupBtn: {
-        borderRadius: 5,
+        borderRadius: 6,
         marginBottom: 5,
-        backgroundColor: '#84a9ac',
+        backgroundColor: '#BDBDBD',
         borderWidth: 1,
         borderColor: 'transparent',
-        width: 300,
+        width: 350,
         height: 45,
         overflow: 'hidden',
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 20
+        marginTop: 15
     },
     buttonText: {
         color: '#fff',
